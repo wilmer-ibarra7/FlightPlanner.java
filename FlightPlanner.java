@@ -10,7 +10,7 @@ public class FlightPlanner extends ConsoleProgram {
 
 	public void run() {
 		println("Welcome to Flight Planner!");
-		readFlightData("Flights.txt");
+		readFlightData("C://Users//WILMER IBARRA//MeritAmerica//Repos//Stanford106AAssignmentStarters//Stanford106AAssignments//src/Flights.txt");
 		println("Here's a list of all the cities in our database:");
 		printCityList(cities);
 		println("Let's plan a round-trip route!");
@@ -67,7 +67,7 @@ public class FlightPlanner extends ConsoleProgram {
 		cities = new ArrayList<String>();
 		try {
 		BufferedReader
-		rd = new BufferedReader(new FileReader(filename));
+		rd = new BufferedReader(new FileReader("C://Users//WILMER IBARRA//MeritAmerica//Repos//Stanford106AAssignmentStarters//Stanford106AAssignments//src/Flights.txt"));
 		while (true) {
 		String line = rd.readLine();
 		if (line == null) break;
